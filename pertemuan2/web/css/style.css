@@ -1,0 +1,57 @@
+.body {
+    background-image: url("../image/gambar.jpg");
+}
+.container{
+    background-color: white;
+    width: 800px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.header{
+    padding: 20px;
+}
+.header ul{
+    display:flex;
+    list-style: none;
+    margin-left: -44px;
+}
+.header li{
+    margin-right: 10px;
+}
+.header ul li a {
+    text-decoration: none;
+    color: rgb(46, 124, 172);
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.header ul li a:hover {
+    background-color: rgb(34, 79, 125);
+    color: white;
+    transition: 0.5s;
+}
+.hero {
+    background-size: cover;
+    height: 250px;
+    background-image: url("../image/imgg.png");
+    background-position: 0 -200px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.artikel {
+    margin: 20px;
+}
+.judul p {
+    margin-top: -20px;
+    font-size: 12px;
+}
+.deskripsi {
+    text-align: justify;
+}
+.footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 4px;
+
+}

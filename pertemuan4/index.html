@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 4 . Java Script</title>
+</head>
+<body>
+    <h1 id="tes" >Judul 1</h1>
+    <h1 id="tess" >Judul 2</h1>
+
+    <h2>Nilai dibawah :</h2>
+    <h2 id="nilai">20</h2>
+
+    <h2 id="hasil">hasil</h2>
+    
+    <h3>Umur saya : <span id="umur">50</span id="umur"></h3>
+    <h3>hasil : <span id="seleksi">...</span></h3>
+
+    <!-- <script>
+        let x = 10
+        let y = 20
+        document.write(x)
+        document.write(y)
+        document.write("<br>")
+        x = y
+        y = x
+
+        document.write("Ini text dari javasrcript") 
+        document.write("<br>")
+        document.write(x)
+        document.write(y)
+        document.write(x+y)
+    </script> -->
+    <script>
+        let x = 10
+        let y = 20
+    
+        document.getElementById("tes").style.color = 'red'
+
+        document.getElementById("tess").style.color = 'green'
+
+        //percabangan (if, else, else if)
+        //gerbang logika (and, or, not)
+        // AND = && ketika semua kondisi true
+        // OR = || ketika salah satu kondisi true
+        // NOT = != kebalikan dari nilai (true=false) (false=true)
+        let nilai = document.getElementById("nilai")
+        let hasil = document.getElementById("hasil")
+        let umur = document.getElementById("umur")
+        let seleksi = document.getElementById("seleksi")
+
+
+        let angka = nilai.innerHTML
+        nilai.innerHTML = 20
+        angka = 20
+        nilai.innerHTML = 30
+
+        umur.innerHTML = 10
+
+        if (nilai.innerHTML == 20) {
+            nilai.style.color = "blue"
+            hasil.innerHTML = "angka di atas nilainya 20"
+        }
+        else if (nilai.innerHTML == 30) {
+            nilai.style.color = "green"
+            hasil.innerHTML = "angka di atas nilainya 30"
+        }
+        else {
+            nilai.style.color = "red"
+            hasil.innerHTML = "angka di atas nilainya tidak sama"
+        }
+        
+        //umur
+        if (umur.innerHTML > 80) {
+            seleksi.innerHTML = "Lansia"
+        }
+        else if (umur.innerHTML <= 80 && umur.innerHTML >= 40) {
+            seleksi.innerHTML = "orang tua"
+        }
+        else if (umur.innerHTML <= 40 && umur.innerHTML >= 20) {
+            seleksi.innerHTML = "anak muda"
+        }
+        else {
+            seleksi.innerHTML = "anak-anak"
+        }
+    </script>
+</body>
+</html>
